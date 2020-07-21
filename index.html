@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>萨卡耶别墅酒店官网</title>
+    <link rel="icon" href="images/logo.jpg" />
+    <!--标题logo-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/commonStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/indexlunbo.css" />
+    <link rel="stylesheet" type="text/css" href="css/indextubiao.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js" defer="defer"></script>
+    <script src="js/login-box.js" defer="defer"></script>
+    <!--登录框js-->
+    <script src="js/首页登陆框验证.js" defer="defer"></script>
+  </head>
+
+  <body>
+    <!--//导航栏-->
+    <div id="banner">
+      <div class="img-wrap">
+        <ul>
+          <li class="item" style="display: block;">
+            <img src="images/轮播1.jpg" width="1519" height="720" alt="" />
+          </li>
+          <li class="item">
+            <img src="images/轮播2.jpg" width="1519" height="720" alt="" />
+          </li>
+          <li class="item">
+            <img src="images/轮播3.jpg" width="1519" height="720" alt="" />
+          </li>
+          <li class="item">
+            <img src="images/轮播4.jpg" width="1519" height="720" alt="" />
+          </li>
+          <li class="item">
+            <img src="images/轮播5.jpg" width="1519" height="720" alt="" />
+          </li>
+        </ul>
+      </div>
+      <div class="lr-tab">
+        <div class="left btn"></div>
+        <div class="right btn"></div>
+      </div>
+      <div class="tab-btn">
+        <ul>
+          <li class="btn active"></li>
+          <li class="btn"></li>
+          <li class="btn"></li>
+          <li class="btn"></li>
+          <li class="btn"></li>
+        </ul>
+      </div>
+
+      <div class="nav-h">
+        <div class="left">语言版本：&ensp;CN&nbsp;/&nbsp;EN</div>
+        <div class="right">
+          <div class="hover phone">
+            <i class="fa fa-volume-control-phone"></i>
+            <div class="customer-service">
+              <ul>
+                <li>客服热线：4006-971-520</li>
+                <li>工作时间：8:00-23:00</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hover code">
+            <!--二维码-->
+            <i class="fa fa-tablet"></i>
+            <div class="img">
+              <img src="images/二维码.jpg" />
+              <p>扫码关注微信</p>
+            </div>
+          </div>
+
+          <span id="login">
+            登录&nbsp;/&nbsp;注册
+          </span>
+        </div>
+      </div>
+      <div class="nav-s">
+        <ul>
+          <li><img src="images/logo.jpg" alt="logo" /></li>
+          <li>
+            <a href="index.html">网站首页</a>
+          </li>
+          <li>
+            <a href="#别墅简介">别墅简介</a>
+          </li>
+          <li>
+            <a href="name spring.html">天下名泉</a>
+          </li>
+          <li>
+            <a href="superior room.html">精致客房</a>
+          </li>
+          <li>
+            <a href="cuisine features.html">美食特色</a>
+          </li>
+          <li>
+            <a href="swimming pool room.html">房间泳池</a>
+          </li>
+          <li>
+            <a href="#别墅咨询">别墅咨询</a>
+          </li>
+          <li>
+            <a href="#联系我们">联系我们</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--//登录框-->
+    <div class="background-shadows">
+      <!--背景阴影-->
+      <div class="login">
+        <!--登录框-->
+        <ul>
+          <li class="login-nav left active">手机登录</li>
+          <!--登录导航-->
+          <li class="login-nav right">密码登录</li>
+          <div class="close"></div>
+          <!--关闭-->
+        </ul>
+
+        <div class="login-type">
+          <!--登录类型-->
+          <div class="mobile-login tiem" style="display: block;">
+            <form action="index.html" method="get">
+              <input id="tel" type="tel" name="tel" placeholder="请输入手机号码" autocomplete="off" /><!-- pattern="^1(3|4|5|6|7|8|9)\d{9}$"-->
+              <input id="code" type="text" name="code" placeholder="请输入验证码" autocomplete="off" /><!--pattern="^d{4,}$" -->
+              <div class="verification-code">
+                <!--验证码-->
+                <a href="#">获取验证码</a>
+              </div>
+              <input class="sign-in" type="submit" value="登录" />
+              <!--登录-->
+            </form>
+          </div>
+          <div class="password-login tiem">
+            <form action="index.html" method="get">
+              <input type="tel" name="email" placeholder="请输入邮箱或会员卡号" autocomplete="off" pattern="^(1(3|4|5|6|7|8|9)\d{9})$|(^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$)" />
+              <!--电话号码或者是邮箱<-->
+
+              <input type="password" name="password" placeholder="请输入密码" autocomplete="off" pattern="^[a-zA-Z0-9]\w{5,17}$" />
+              <input class="sign-in" type="submit" value="登录" />
+              <!--登录-->
+              <div class="forget-password">
+                <!--忘记密码-->
+                <a href="#">忘记密码？</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--//图标-->
+    <div class="item-grid">
+      <div class="item">
+        <div class="item-image">
+          <img src="images/天下名泉.jpg" />
+        </div>
+        <div class="item-text">
+          <div class="item-text-wrapper">
+            <h2 class="item-text-title"><a href="name spring.html">天下名泉</a></h2>
+            <p class="item-text-dek">The World Of Stephen</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-image">
+          <img src="images/精致客房.jpg" />
+        </div>
+        <div class="item-text">
+          <div class="item-text-wrapper">
+            <h2 class="item-text-title"><a href="superior room.html">精致客房</a></h2>
+            <p class="item-text-dek">Exquisite Guest Room</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-image">
+          <img src="images/美食特色.jpg" />
+        </div>
+        <div class="item-text">
+          <div class="item-text-wrapper">
+            <h2 class="item-text-title"><a href="cuisine features.html">美食特色</a></h2>
+            <p class="item-text-dek">Charateristic Food</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-image">
+          <img src="images/房间泳池.jpg" />
+        </div>
+        <div class="item-text">
+          <div class="item-text-wrapper">
+            <h2 class="item-text-title"><a href="swimming pool room.html">房间泳池</a></h2>
+            <p class="item-text-dek">The Leaf Jimbaran</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--//优惠和快讯-->
+    <div id="article-one">
+      <div class="y-h">
+        <p class="biaoti">&nbsp;精选优惠</p>
+        <hr width="97%" align="left" />
+        <div class="youhui">
+          <img src="images/精选优惠2.jpg" />
+          <p>2晚丽府别墅+2晚阿尤达（含双早）<br />优惠价520元</p>
+        </div>
+      </div>
+      <div class="k-x">
+        <p class="biaoti">酒店快讯</p>
+        <hr width="97%" align="right" />
+        <p class="duanluo"><span>01</span>别墅的设计融入现代化的巴厘岛特色建筑风格</p>
+        <p class="duanluo"><span>02</span>被葱郁的绿色植物所环绕位于风景迷人的花园中</p>
+        <p class="duanluo"><span>03</span>每栋别墅均有泳池可让你感受巴厘岛的独特风情</p>
+      </div>
+    </div>
+
+    <!--//关于酒店-->
+    <div id="article-two">
+      <div class="left" id="别墅简介">
+        <p>别墅简介</p>
+        <br />
+        <p>萨卡耶别墅酒店是巴厘岛</p>
+        <p>The Sakauys Luxury Villas Spa</p>
+        <p>坐落于勒吉安，是原始</p>
+        <p>花园中的静谧居所。</p>
+        <br /><br />
+        <p class="font">查看更多</p>
+      </div>
+      <div class="center">
+        <img src="images/酒店简介.jpg" />
+      </div>
+      <div class="right" id="别墅咨询">
+        <p>快速咨询</p>
+        <br />
+        <p class="font-one">4006-971-520</p>
+        <br /><br /><br />
+        <p class="font-two"><i class="fa fa-volume-control-phone"></i>&ensp;立即预约</p>
+      </div>
+    </div>
+
+    <!--//四个小图标-->
+    <div id="lcon">
+      <div class="lcon-one">
+        <a href="name spring.html"><img src="images/小图标之天下名泉.png"/></a>
+        <p>天下名泉</p>
+      </div>
+      <div class="lcon-two">
+        <a href="superior room.html"><img src="images/小图标之精致客房.png"/></a>
+        <p>精致客房</p>
+      </div>
+      <div class="lcon-three">
+        <a href="cuisine features.html"><img src="images/小图标之美食特色.png"/></a>
+        <p>美食特色</p>
+      </div>
+      <div class="lcon-four">
+        <a href="swimming pool room.html"><img src="images/小图标之房间泳池.png"/></a>
+        <p>房间泳池</p>
+      </div>
+    </div>
+
+    <!--//底部导航 关于我们-->
+    <div id="footer">
+      <div class="footer-one">
+        <p class="font-one" id="联系我们">萨卡耶别墅酒店</p>
+        <p class="font-two">电话：0755-2729&nbsp;6556</p>
+        <p class="font-two">传真：0755-2729&nbsp;6556</p>
+        <p class="font-two">技术支持：萨卡耶</p>
+        <p>邮箱：EINS@LIANG.COM.CN</p>
+        <p>地址：The Sakaye Luxury Villas &amp; Spa</p>
+        <div class="scanning-code"></div>
+      </div>
+      <div class="footer-two">
+        <p>Copyrighjt 2008-2020 All Rights Reserved 粤ICP备09063742号 电信与信息服务业经营许可证</p>
+      </div>
+    </div>
+  </body>
+</html>

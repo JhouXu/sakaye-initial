@@ -1,0 +1,83 @@
+body,ul,li,a,p,h2,h3,input {
+	margin: 0;
+	padding: 0;
+}
+
+body,h3 {
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+
+body,a {
+	color: #212121;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#nav{
+	position: relative;
+	padding-left: 30px;
+	padding-right: 25px;
+	width: 1519px;
+	height: 90px;
+	background: rgb(1,158,151);
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+
+#nav .active-two{
+	background: white;
+	color: rgb(1,158,151);
+}
+#nav .active-three{
+	background: white;
+	color: rgb(1,158,151);
+}
+#nav .active-four{
+	background: white;
+	color: rgb(1,158,151);
+}
+#nav .active-five{
+	background: white;
+	color: rgb(1,158,151);
+}
+
+
+#nav img{
+	height: 90px;
+}
+#nav img,li{
+	float: left;
+}
+#nav li{
+	margin-left: 5px;
+}
+#nav ul{
+	position: absolute;
+	right: 30px;
+	top: 5px;
+	margin-left: -5px;
+}
+#nav a{
+	display: block;
+	height: 85px;
+	line-height: 85px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#nav a{
+	color: white;
+	transition: 0.7s;
+}
+#nav a:hover{
+	background: white;
+	color: rgb(1,158,151);
+}

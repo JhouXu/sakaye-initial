@@ -1,0 +1,243 @@
+#article-one {
+  max-width: 1470px;
+  max-height: 547px;
+  margin: 20px auto 0;
+  overflow: hidden;
+}
+#article-one div {
+  float: left;
+}
+#article-one .youhui img {
+  width: 99%;
+  height: 80%;
+}
+#article-one .biaoti {
+  font-size: 22px;
+}
+#article-one .y-h {
+  width: 50%;
+  position: relative;
+}
+#article-one .k-x {
+  width: 50%;
+  text-indent: 1.5em;
+}
+.y-h .youhui p {
+  position: absolute;
+  margin: 0 auto;
+  padding: 15px;
+  bottom: 70px;
+  left: 102px;
+  width: 70%;
+  height: 80px;
+  line-height: 25px;
+  box-sizing: border-box;
+  background-color: rgba(1, 158, 151, 0.7);
+  text-align: center;
+  color: white;
+}
+.k-x .duanluo {
+  line-height: 45px;
+  padding-bottom: 105px;
+}
+.k-x p span {
+  font-size: 45px;
+  padding-right: 20px;
+}
+
+#article-two {
+  width: 1470px;
+  height: 350px;
+  margin: 50px auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#article-two .left,
+.center,
+.right {
+  float: left;
+}
+#article-two .left {
+  width: 290px;
+  height: 350px;
+  background: rgb(1, 158, 151);
+  color: white;
+  font-size: 15px;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+#article-two .left .font {
+  width: 60px;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px 30px;
+  border: 1px solid white;
+  transition: 0.7s;
+}
+#article-two .left .font:hover {
+  background: white;
+  color: rgb(1, 158, 151);
+}
+#article-two .center img {
+  width: 890px;
+  height: 350px;
+  object-fit: cover;
+}
+#article-two .right {
+  width: 290px;
+  height: 350px;
+  border: 2px solid rgb(1, 158, 151);
+  box-sizing: border-box;
+  color: rgb(1, 158, 151);
+  padding: 60px 30px;
+  font-size: 15px;
+}
+#article-two .right .font-one {
+  font-size: 26px;
+}
+#article-two .right .font-two {
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px 10px;
+  border: 1px solid rgb(1, 158, 151);
+  text-align: center;
+  transition: 0.7s;
+}
+#article-two .right .font-two:hover {
+  background: rgb(1, 158, 151);
+  color: white;
+}
+
+/*手机、密码登录框*/
+.background-shadows {
+  /*display: none;*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  color: #b8b8b8;
+}
+
+.background-shadows {
+  display: none;
+}
+.background-shadows .login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  padding: 35px 50px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+}
+
+.background-shadows .login-nav,
+.background-shadows .sign-in {
+  cursor: pointer;
+}
+
+.background-shadows .login-nav {
+  margin-bottom: 45px;
+  float: left;
+}
+
+ul .left {
+  position: relative;
+  left: 20px;
+}
+
+ul .right {
+  position: relative;
+  right: -130px;
+}
+
+ul .left:hover,
+ul .right:hover {
+  color: rgb(1, 158, 151);
+}
+
+.background-shadows .active {
+  /*  准备一个登录框导航固定的颜色*/
+  color: rgb(1, 158, 151);
+}
+
+.login .close {
+  /*关闭*/
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 35px;
+  height: 35px;
+  background: url(../images/登录框/popup_guanbi.png) no-repeat;
+}
+
+.login .close:hover {
+  background-position-y: -35px;
+}
+
+.login-type .mobile-login,
+.login-type .password-login {
+  display: none;
+  position: absolute;
+  top: 104px;
+  width: 300px;
+}
+
+.login-type input {
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 300px;
+  height: 42px;
+  box-sizing: border-box;
+  border: 1px solid rgb(1, 158, 151);
+  border-radius: 5px;
+  line-height: 0;
+}
+
+input:focus {
+  border-radius: 5px;
+  border: 1.15px solid #4d90fe;
+  outline: none; /* 清除文本框的焦点样式*/
+}
+
+.login-type .verification-code,
+.mobile-login .sign-in,
+.login-type .verification-code,
+.password-login .sign-in {
+  font-size: 16px;
+  color: #b8b8b8;
+}
+
+.mobile-login .verification-code {
+  /*获取验证码*/
+  position: absolute;
+  top: 62px;
+  right: 0;
+  width: 100px;
+  height: 42px;
+  background-color: #e6cd6a;
+  border-radius: 0 5px 5px 0;
+  text-align: center;
+  line-height: 42px;
+}
+
+.mobile-login .sign-in,
+.password-login .sign-in {
+  margin-top: 15px;
+  background-color: rgb(1, 158, 151);
+  color: #fff;
+}
+
+.password-login .forget-password,
+.password-login a {
+  text-align: right;
+  color: #e6cd6a;
+  font-size: 14px;
+}

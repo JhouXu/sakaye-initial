@@ -1,0 +1,45 @@
+html,
+body,
+div,
+strong,
+span,
+form,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td,
+th,
+tbody,
+thead,
+input,
+textarea,
+select,
+fieldset,
+p,
+hr {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+
+ul,
+ol,
+dl,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}

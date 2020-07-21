@@ -1,0 +1,412 @@
+#title {
+  padding: 55px 0 20px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+}
+
+.article {
+  margin: 0 auto;
+  margin-bottom: 225px;
+  width: 1300px;
+  height: 3330px;
+  overflow: hidden;
+  border-top: 1px solid rgb(215, 219, 219);
+  box-sizing: border-box;
+}
+.article .option,
+.subject {
+  float: left;
+  padding: 20px;
+  overflow: hidden;
+}
+.article .option {
+  width: 25%;
+  height: 3330px;
+  box-sizing: border-box;
+}
+.article .subject {
+  width: 75%;
+  height: 3330px;
+  border-left: 1px solid rgb(215, 219, 219);
+  box-sizing: border-box;
+}
+.article .map {
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.article .map img {
+  width: 285px;
+  height: 130px;
+}
+.article .look-map {
+  position: absolute;
+  left: 77px;
+  bottom: 49px;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: white;
+  color: rgb(1, 158, 151);
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.article .map:hover .look-map {
+  border: 0.5px solid rgb(1, 158, 151);
+}
+.article .type input {
+  background-color: red;
+  cursor: pointer;
+}
+.article .type {
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(215, 219, 219);
+}
+.article .option .title {
+  font-size: 18px;
+  text-indent: 0.2em;
+  line-height: 35px;
+}
+.article .option .content {
+  font-size: 14px;
+  text-indent: 1em;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+/*主要内容的小标题和图片*/
+.subject .tie {
+  position: relative;
+  overflow: hidden;
+}
+.tie .title {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+}
+.tie .more {
+  position: relative;
+  top: -20px;
+  right: -873px;
+  font-size: 15px;
+}
+.subject .tie .title:hover,
+.more:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.subject .tie .box {
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 218px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  cursor: pointer;
+  background-color: #000;
+}
+.subject .tie .box p {
+  color: white;
+  font-weight: bold;
+}
+
+.subject .box p:hover {
+  text-decoration: underline;
+}
+
+.subject .tie .title-one {
+  background: black url(../images/美食特色/海鲜.jpg) no-repeat center;
+}
+.subject .tie .title-two {
+  background: black url(../images/美食特色/印度菜.jpg) no-repeat center;
+}
+.subject .tie .title-three {
+  background: black url(../images/美食特色/牛排馆.jpg) no-repeat center;
+}
+.subject .tie .title-four {
+  background: black url(../images/美食特色/咖啡馆.jpg) no-repeat center;
+  margin-right: 0;
+}
+.subject .tie .title-five {
+  background: black url(../images/美食特色/意餐.jpg) no-repeat center;
+}
+.subject .tie .title-six {
+  background: black url(../images/美食特色/日式料理.jpg) no-repeat center;
+}
+.subject .tie .title-seven {
+  background: black url(../images/美食特色/中餐.jpg) no-repeat center;
+}
+.subject .tie .title-eight {
+  background: black url(../images/美食特色/披萨.jpg) no-repeat center;
+  margin-right: 0;
+}
+
+/*高档餐饮*/
+.subject .delicacies {
+  margin: 35px 0 55px 0;
+  overflow: hidden;
+  margin-right: -20px;
+}
+.delicacies-box img,
+.delicacies .img {
+  position: relative;
+  width: 218px;
+  height: 125px;
+}
+
+.delicacies-box .img {
+  width: 218px;
+  height: 125px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+
+.delicacies-box .img i {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/*鼠标进入时触发*/
+.delicacies-box .img:hover {
+  transition-timing-function: ease-out;
+  transform: scale(1.05);
+}
+
+/*鼠标离开时触发*/
+/*.images-unscale {
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	transform: scale(1);
+}*/
+
+.delicacies-box .img i:hover {
+  color: #ff585b;
+}
+
+.delicacies-box .img i:hover img {
+  transform: scale(1.01);
+}
+
+.delicacies-box .img i:hover::before {
+  content: "\f004";
+}
+
+.subject .delicacies .delicacies-box {
+  float: left;
+  overflow: hidden;
+  margin-right: 20px;
+  line-height: 23px;
+  cursor: pointer;
+}
+.delicacies .delicacies-box .shop {
+  font-size: 15px;
+}
+.delicacies .delicacies-box .shop:hover {
+  text-decoration: underline;
+}
+.delicacies .delicacies-box .information {
+  font-size: 12px;
+  color: rgb(33, 33, 33);
+}
+.delicacies .delicacies-box .comment:hover {
+  text-decoration: underline;
+}
+
+.comment span {
+  position: relative;
+  top: 1px;
+  padding: 0 5px 0 0.5px;
+  width: 20px;
+  color: #00a680;
+  font-size: 16px;
+}
+
+.sort {
+  position: relative;
+}
+
+.sort .sort-name {
+  position: relative;
+  width: 99.9%;
+}
+
+.sort .nav-sort {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.nav-sort ul {
+  display: inline-block;
+}
+
+.sort .nav-sort {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.nav-sort ul {
+  position: absolute;
+  margin-left: 10px;
+  font-size: 13.5px;
+  font-weight: 400;
+}
+
+.nav-sort ul li {
+  display: inline-block;
+  height: 30px;
+  margin: 0 5px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.nav-sort .active {
+  font-weight: 700;
+  border-bottom: 4px solid #00a680;
+}
+
+.sort-subject .popularity,
+.sort-name .name {
+  position: relative;
+  width: 100%;
+  height: 175px;
+  padding: 20px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sort-subject .popularity:hover,
+.sort-name .name:hover {
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popularity .image,
+.popularity img,
+.name .image,
+.name img {
+  width: 160px;
+  height: 175px;
+}
+
+.popularity .image,
+.name .image {
+  position: relative;
+}
+
+.popularity img,
+.name img {
+  object-fit: cover;
+}
+
+.popularity .image,
+.popularity .restaurant-name,
+.name .image,
+.name .restaurant-name {
+  float: left;
+}
+
+.popularity .restaurant-name,
+.name .restaurant-name {
+  margin-left: 25px;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.restaurant-name p {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000a12;
+}
+
+.restaurant-name ul li {
+  clear: left;
+}
+
+.restaurant-name ul:last-child {
+  position: absolute;
+  bottom: 20px;
+}
+
+.sort-subject .popularity a:hover,
+.sort-name .name a:hover {
+  text-decoration: underline;
+}
+
+.restaurant-name li {
+  line-height: 25px;
+}
+
+.restaurant-name .comment {
+  position: relative;
+  height: 25px;
+  line-height: 30px;
+}
+
+.comment a {
+  position: absolute;
+  top: -1px;
+  margin-left: 5px;
+  width: 70px;
+}
+
+.restaurant-name .fa-dot-circle-o,
+.restaurant-name .fa-circle-o {
+  font-size: 21px;
+  color: #00a680;
+}
+
+.restaurant-name ul:last-child span {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.popularity .image,
+.popularity a,
+.name .image,
+.name a {
+  cursor: pointer;
+}
+
+.popularity .image i,
+.name .image i {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.popularity .image i:hover,
+.name .image i:hover {
+  color: #ff585b;
+}
+
+.popularity .image i:hover::before,
+.name .image i:hover::before {
+  content: "\f004";
+}
+
+.sort-subject,
+.sort-name {
+  display: none;
+  position: absolute;
+  width: 99.9%;
+}
+
+.sort .dis {
+  display: block;
+}

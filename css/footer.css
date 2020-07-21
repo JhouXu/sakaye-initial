@@ -1,0 +1,64 @@
+#footer{
+	width: 1519px;
+	height: 291px;
+	margin: 0 auto;
+	overflow: hidden;
+	color: white;
+	position: relative;
+	font-size: 13px;
+}
+#footer .footer-one{
+	width: 1519px;
+	height: 265px;
+	background-color: rgb(1,158,151);
+	text-indent: 95px;
+	line-height: 50px;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+#footer .footer-one .scanning-code{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 40px;
+	right: 95px;
+	background-image: url(../images/二维码.jpg);
+	background-size: 100%;
+	border-radius: 3px;
+}
+#footer .footer-two{
+	width: 1519px;
+	height: 25px;
+	line-height: 25px;
+	background-color: rgb(0,116,107);
+	text-align: center;
+}
+.footer-one .font-one{
+	font-size: 18px;
+}
+.footer-one .font-two{
+	display: inline-block;
+}
+
+#lcon{
+	width: 1519px;
+	height: 140px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow: hidden;
+	color: rgb(1,158,151);
+	background: rgb(219,219,219);
+}
+#lcon .lcon-one,.lcon-two,.lcon-three,.lcon-four{
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	padding-top: 20px;
+} 
+#lcon img{
+	transition: 0.7s;
+}
+#lcon img:hover{
+	transform: rotate(360deg) scale(1.1);
+} 

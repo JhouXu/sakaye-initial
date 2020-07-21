@@ -1,0 +1,1256 @@
+/*---------------header---------------*/
+
+
+.header {
+	position: relative;
+	margin: 50px auto 15px;
+	width: 1260px;
+}
+
+.remark-on,.ranking,.location-map {
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.remark-on,.ranking {
+	float: left;
+}
+
+.header span {
+	margin: 0 20px;
+}
+
+.location-map {
+	clear: left;
+}
+
+.location-map i {
+	padding-right: 4px;
+	font-size: 18px;
+}
+
+.header a {
+	border-bottom: 1px dotted #d8d8d8;
+}
+
+.header a:hover {
+	border-bottom: 1px dotted #212121;
+}
+
+.location-map i {
+	color: #019e97;
+}
+
+.header-icon {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+
+.collect,.share {
+	float: left;
+}
+
+.header-icon i {
+	margin: 0 8px;
+}
+
+.header-icon div:first-child p {
+	padding-right: 8px;
+	border-right: 1px solid #d8d8d8;
+}
+
+.collect i:hover {
+	color: #ff585b;
+}
+
+.collect i:hover::before {
+	content: "\f004";
+}
+
+.share i:hover {
+	color: #019e97;
+}
+
+
+
+/*---------------article---------------
+---------------article---------------*/
+
+
+.article {
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	width: 1519px;
+	background-color: #f2f2f2;
+}
+
+.search-picture {
+	position: relative;
+	margin: 15px auto 38px;
+	width: 1260px;
+	overflow: hidden;
+	box-sizing: border-box;
+	z-index: 2;
+}
+
+
+
+.search-box,.picture-box {
+	background-color: white;
+	height: 425px;
+	float: left;
+}
+
+.search-box {
+	padding: 20px 19px;
+	width: 403px;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+	z-index: 2;
+}
+
+.article::before,.article::after {
+	top: 395px;
+    width: 120px;
+    height: 36px;
+    border-radius: 12px;
+    box-shadow: 0 0 16px 12px rgba(0,0,0,.4);
+    content: "";
+    
+}
+
+.article::before {
+	position: absolute;
+    left: 168px;
+    transform: rotate(-8deg);
+    z-index: 1;
+}
+
+.article::after {
+	position: absolute;
+    left: 372px;
+    transform: rotate(8deg);
+    z-index: 1;
+}
+
+
+
+/* 控制编辑区域的 */
+input[type="date"]::-webkit-datetime-edit {
+	/*content: '起始时间'; */
+	color: white; 
+	padding-left: 0;
+}
+
+/* 控制年月日这个区域的 */
+          input[type="date"]::-webkit-datetime-edit-fields-wrapper { 
+    background-color: white; 
+    position: absolute;
+    left: 35px;
+    bottom: 3px;
+}
+ 
+ 
+/* 这是控制年月日之间的斜线或短横线的 */
+          input[type="date"]::-webkit-datetime-edit-text {
+   	color: black; 
+    /*padding: -2.3px; */
+   
+} 
+
+
+          /* 控制年字 */
+          input[type="date"]::-webkit-datetime-edit-year-field { 
+	background-color: rgba(0,0,0,0);/*去除背景蓝*/
+    color: black; 
+
+} 
+
+
+          /* 控制月字 */
+          input[type="date"]::-webkit-datetime-edit-month-field { 
+    color: black; 
+} 
+          
+          /* 控制日字 */
+          input[type="date"]::-webkit-datetime-edit-day-field { 
+    color: black; 
+} 
+
+        /*控制下拉小箭头的*/ 
+        input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    
+    width: 177px;
+    height: 45px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px rgba(255,255,255,0), 0 1px rgba(255,255,255,0);
+    background-color: rgba(255,255,255,0);
+    background-image: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,0));
+    color: rgba(255,255,255,0); 
+} 
+
+        /* 去掉date中上下小三角，但是保留input类型为number的小三角。 */
+input[type=date]::-webkit-inner-spin-button { 
+    visibility: hidden; 
+}
+
+/*----------用来移除叉叉按钮 鼠标移上去还会显示----------*/ 
+input[type="date"]::-webkit-clear-button{
+    display: none;
+}
+
+
+        
+form p {
+	position: relative;
+    display: inline-block;
+}
+
+.time-room .time,.time-room .sum {
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.time-room .sum p:nth-child(2) {
+	box-shadow: none;
+}
+
+.time-room p span{
+	position: absolute;
+	top: 5px;
+	left: 42.5px;
+	z-index: 1;
+	font-size: 12px;
+	color: #4a4a4a;
+}   
+
+form .time,form .sum {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+	font-size: 14px;
+	font-weight: 700;
+   	color: black;
+}
+        
+form .time {
+   	width: 175px;
+    height: 46px;
+    outline: none;/* 清除文本框的焦点样式*/
+}
+
+form .stary {
+	margin-right: 8px;
+}
+
+.time-room .stary:focus { 
+	border: 1px solid #00a680;
+}
+
+.time-room .stary::after { 
+	content: "";
+	position: absolute;
+	width: 9px;
+	height: 100%;
+	background-color: #00a680;
+}
+
+.time-room .stary::before,.time-room .end::before { 
+	content: "\f272";
+	position: absolute;
+	left: 16px;
+	bottom: 13px;
+	display: inline-block;
+  	font: normal normal normal 14px/1 FontAwesome;
+  	color: #767676;
+  	font-size: 17px;
+  	text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+.time-room .end:focus { 
+	border: 1px solid #d91a18;
+}
+
+.time-room .end::after { 
+	content: "";
+	position: absolute;
+	width: 9px;
+	height: 100%;
+	background-color: #d91a18;
+}
+
+.time-room .sum {
+	margin-top: 11px;
+	width: 363px;
+	height: 45px;
+}
+
+.time-room .sum::before {
+	content: "\f0c0";
+	position: absolute;
+	bottom: 13px;
+	left: 9px;
+	color: #767676;
+	display: inline-block;
+  	font: normal normal normal 14px/1 FontAwesome;
+  	font-size: 17px;
+  	text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+.sum span{
+	width: 100px;
+	font-weight: normal;
+}
+
+.sum input{
+	width: 25px;
+	height: 16px;
+}
+
+.sum p span{
+	position: absolute;
+	top: -12px;
+	left: 43px;
+	z-index: 1;
+}
+
+.sum .sum-active{
+	position: absolute;
+	left: 43px;
+	bottom: 2.5px;
+	font-size: 14px;
+}
+
+.sum input {
+	text-align: center;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+}
+
+.sum input:focus {
+	border-bottom: 1px solid #767676;
+}
+
+.sum {
+	outline: none;
+}
+
+.sum:focus {
+	border: 1px solid #767676;
+}
+
+/*.time-room .sum-border{
+	border: 1px solid #767676;
+}*/
+
+.time-room .sum:hover {
+	border: 1px solid #767676;
+}
+
+/****************************search-box**********************************************************************/
+
+.search-box .real-time {
+	padding: 10px 0 25px;
+	text-align: center;
+	color: #d91e18;
+	font-weight: 700;
+}
+
+
+
+/****************************picture-box**********************************************************************/
+
+
+
+.picture-box {
+	margin-left: 25px;
+	width: 830px;
+	color: white;
+	cursor: pointer;
+}
+
+.picture-box-left,.picture-box-right {
+	float: left;
+	height: 425px;
+	overflow: hidden;
+	
+}
+
+.picture-box-left {
+	width: 604px;
+}
+
+.picture-box-left .big-picture {
+	position: relative;
+	width: 604px;
+	height: 306.2px;
+}
+
+.big-picture li {
+	display: none;
+}
+
+.big-picture img {
+	position: absolute;
+	width: 604px;
+	height: 306.2px;
+}
+
+.big-picture img:hover {
+	opacity: .9;
+}
+
+.big-picture .btn .left,.big-picture .btn .right {
+	width: 60px;
+	height: 60px;
+	z-index: 2;
+	background-color: rgba(0,0,0,.27);
+}
+
+.big-picture .btn .left:hover,.big-picture .btn .right:hover {
+	background-color: rgba(0,0,0,.4);
+}
+
+.big-picture .btn .left {
+	position: absolute;
+	top: 130px;
+	left: 0;
+	background-image: url(../images/精致客房/btn.png);
+	background-position-x: -9px;
+	background-position-y: -6px;
+	border-radius: 0 3px 3px 0;
+}
+
+.big-picture .btn .right {
+	position: absolute;
+	top: 130px;
+	right: 0;
+	background-image: url(../images/精致客房/btn.png);
+	background-position-x: 70px;
+	background-position-y: -6px;
+	border-radius: 3px 0 0 3px;
+}
+
+.scroll-pictures p {
+	position: absolute;
+	left: 20px;
+	bottom: 11px;
+	font-weight: bold;
+}
+
+.scroll-pictures p i{
+	position: relative;
+	bottom: -2px;
+	font-size: 27px;
+	margin-right: 11px;
+}
+
+.scroll-pictures p a{
+	color: white;
+}
+
+.scroll-pictures p a:hover{
+	text-decoration: underline;
+}
+
+.picture-box .small-picture {
+	margin-right: -2px;
+	height: 118.8px;
+}
+
+.small-picture li,.small-picture img {
+	width: 58.6px;
+	height: 58.4px;
+	object-fit: cover;
+}
+
+.small-picture li {
+	margin-right: 2px;
+	margin-top: 2px;
+	background-color: black;
+}
+
+.small-picture img {
+	opacity: .45;
+}
+
+.small-picture img:hover {
+	opacity: 1;
+}
+
+.active img{
+	opacity: 1;
+}
+
+.picture-box-right {
+	margin-left: 2px;
+	width: 223px;
+}
+
+.picture-box-right .traveler,.picture-box-right .panorama,.picture-box-right .room {
+	position: relative;
+	margin-bottom: 2px;
+	height: 140.33px;
+	background-size: 100%;
+}
+
+.picture-box-right .show{
+	width: 223px;
+	height: 140.33px;
+	background-color: rgba(0,0,0,.35);
+}
+
+.picture-box-right .traveler {
+	background-image: url(../images/精致客房/timg20.jpg);
+}
+
+.picture-box-right .panorama {
+	background-image: url(../images/精致客房/timg19.jpg);
+}
+
+.picture-box-right .room {
+	background-image: url(../images/精致客房/timg17.jpg);
+}
+
+.picture-box-right .show:hover {
+	background-color: rgba(0,0,0,.15);
+}
+
+.picture-box-right .show:hover {
+	background-color: rgba(0,0,0,.15);
+}
+
+.picture-box-right .show:hover {
+	background-color: rgba(0,0,0,.15);
+}
+
+.picture-type span,.picture-type p {
+	display: block;
+	text-align: center;
+}
+
+.picture-type i {
+	font-size: 30px;
+}
+
+.picture-type p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.picture-type span:nth-child(2) {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+
+
+/**************************************************************active-nav*********************************/
+.article .nav-box{
+	display: none;
+	position: absolute;
+	width: 1519px;
+	height: 55px;
+	background-color: white;
+	border: 1px solid #E5E5E5;
+	box-shadow: 0px 3px 5px rgba(0,0,0,.2);
+}
+
+
+.nav-box .article-nav {
+	position: relative;
+	margin: 0 auto;
+	width: 1260px;
+	height: 55px;
+	line-height: 55px;
+}
+
+.article-nav .nav-name,.article-nav .nav {
+	overflow: hidden;
+}
+
+.article-nav div {
+	display: inline-block;
+}
+
+.article-nav li,.article-nav a {
+	height: 55px;
+	font-size: 14px;
+	color: #4a4a4a;
+}
+
+.article-nav a {
+	cursor: pointer;
+}
+
+.nav li {
+	margin-left: 15px;
+	margin-right: 30px;
+	box-sizing: border-box;
+	/*border-bottom: 4px solid #019e97;*/
+}
+
+.nav a:hover {
+	color: #019e97;
+}
+
+.nav-name a {
+	font-weight: 700;
+}
+
+.nav-name li:last-child {
+	margin-left: 20px;
+	color: #E5E5E5;
+}
+
+
+
+
+/**************************************************************about-box*********************************/
+
+.article .about-box {
+	position: relative;
+	margin-left: 132px;
+	margin-bottom: 30px;
+	padding: 24px 24px 0;
+	width: 814px;
+	height: 720px;
+	background-color: white;
+	border: 1px solid #E5E5E5;
+	box-sizing: border-box;
+}
+
+.article .about-box::before {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	content: "";
+	width: 814px;
+	height: 5px;
+	background-color: #078171;
+}
+
+.about-box .title ,.location-place .title {
+	padding-bottom: 20px;
+	width: 100%;
+	color: #000a12;
+	font-size: 19px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.left-and-right .about-box-left,.left-and-right .about-box-right {
+	float: left;
+	width: 372px;
+	height: 635px;
+	background-color: white;
+}
+
+.left-and-right .about-box-left {
+	margin-right: 20px;
+}
+
+.about-box-left .prize {
+	padding: 15px 0 30px;
+	overflow: hidden;
+	box-sizing: border-box;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.prize .prize-box {
+	color: #078171;
+}
+
+.fraction p {
+	font-size: 41px;
+}
+
+.comment ,.list-two {
+	cursor: pointer;
+}
+
+.fraction p,.comment p:first-child {
+	font-weight: 700;
+}
+
+.prize-box .fraction,.prize-box .comment {
+	display: inline-block;
+}
+
+.comment p:nth-child(2) i {
+	font-size: 18px;
+	color: #00a680;
+}
+
+
+.comment p:nth-child(2) span {
+	margin-left: 5px;
+	font-size: 13px;
+	color: #4a4a4a;
+	border-bottom: 1px dotted #d6d6d6;
+}
+
+.prize ul i {
+	font-size: 16px;
+	color: #00a680;
+}
+
+.prize ul li {
+	clear: left;
+}
+
+.prize ul span {
+	font-size: 13px;
+	color: #4a4a4a;
+}
+
+.prize .list-one {
+	margin: 5px 0 15px;
+}
+
+.list-one span {
+	margin-left: 20px;
+}
+
+.list-two i {
+	width: 18px;
+	display: inline-block;
+    text-align: right;
+}
+
+.list-two span {
+	margin-left: 5px;
+	border-bottom: 1px dotted #d6d6d6;
+}
+
+.list-two li {
+	margin-bottom: 7px;
+}
+
+.list-two .traveler ,.list-two .outstanding {
+	display: none;
+	position: absolute;
+	padding: 15px;
+	width: 300px;
+	background-color: white;
+	box-shadow: 3px 3px 10px rgba(0,0,0,.1), -3px -3px 10px rgba(0,0,0,.07);
+	cursor: default;
+
+}
+
+.list-two .traveler:before {
+	position: absolute;
+	top: 57px;
+	left: -7.5px;
+	transform: rotate(-45deg);
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	box-shadow: -3px -4px 8px rgba(0,0,0,.1);
+	content: "";
+	
+}
+
+.list-two .outstanding:before {
+	position: absolute;
+	top: 50px;
+	left: -7.5px;
+	transform: rotate(-45deg);
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	box-shadow: -3px -4px 8px rgba(0,0,0,.1);
+	content: "";
+	
+}
+
+.list-two .traveler {
+	top: 203px;
+	left: 198px;
+	
+}
+
+.list-two .outstanding {
+	height: 75px;
+	top: 238px;
+	left: 99px;
+	
+}
+
+.list-two .traveler p ,.list-two .outstanding p {
+	color: #4A4A4A;
+	font-size: 13px;
+}
+
+.list-two .traveler p:first-child ,.list-two .outstanding p:first-child {
+	margin-bottom: 5px;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.list-two .traveler p:last-child {
+	color: #069;
+	margin-top: 8px;
+}
+
+.list-two .hover-traveler:hover .traveler {
+	display: block;
+}
+
+.list-two .hover-outstanding:hover .outstanding {
+	display: block;
+}
+
+
+
+
+
+
+
+.about-box-left .prcture {
+	position: relative;
+	width: 372px;
+	height: 260px;
+}
+
+.prcture {
+	overflow: hidden;
+}
+
+.prcture img {
+	display: none;
+	position: absolute;
+	margin-top: 19px;
+	width: 372px;
+	height: 260px;
+}
+
+.prcture .btn-left,.prcture .btn-right {
+	position: absolute;
+	top: 112px;
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0,0,0,.32);
+	background-position-y: -7px;
+	cursor: pointer;
+}
+
+.prcture .btn-left:hover ,.prcture .btn-right:hover {
+	background-color: rgba(0,0,0,.5);
+}
+
+.prcture .btn-left {
+	left: 0;
+	background-image: url(../images/精致客房/btn.png);
+	background-position-x: -8px;
+	border-radius: 0px 3px 3px 0;
+}
+
+.prcture .btn-right {
+	right: 0;
+	background-image: url(../images/精致客房/btn.png);
+	background-position-x: -80px;
+	border-radius: 3px 0px 0 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hotel-facilities,.room-features {
+	overflow: hidden;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+
+.hotel-facilities p,.room-features p {
+	margin-bottom: 16px;
+	width: 50%;
+	float: left;
+	font-size: 14px;
+	color: #4A4A4A;
+}
+
+.hotel-facilities i,.room-features i {
+	margin-right: 8px;
+	display: inline-block;
+	text-align: right;
+	width: 18px;
+	color: #2C2C2C;
+	font-size: 16px;
+}
+
+.hotel-facilities p:first-child,.hotel-facilities p:last-child,.room-features p:first-child,.room-features p:last-child,.hotel-information p:first-child {
+	width: 100%;
+	font-weight: 700;
+	clear: left;
+}
+
+.hotel-facilities p:nth-child(2),.room-features p:nth-child(2) {
+	clear: left;
+}
+
+.hotel-information {
+	position: absolute;
+}
+
+.hotel-information p {
+	font-size: 11px;
+	color: #4A4A4A;
+}
+
+.hotel-information .fa-info-circle ,.hotel-information .fa-remove {
+	cursor: pointer;
+}
+
+.hotel-information .fa-info-circle {
+	font-size: 13px;
+	
+}
+
+.hotel-information .fa-info-circle:hover ,.hotel-information .fa-remove:hover {
+	color: #078171;
+}
+
+.hotel-information .ster-lever {
+	display: none;
+	position: absolute;
+	top: -47px;
+	left: -72px;
+	z-index: 4;
+	padding: 24px;
+	width: 344px;
+	background-color: white;
+	border-radius: 2px;
+	box-shadow: 3px 4px 8px rgba(0,0,0,.1), -2px -2px 5px rgba(0,0,0,.07);
+	font-size: 13px;
+	color: #4A4A4A;
+	line-height: 18px;
+}
+
+.hotel-information .close {
+	display: none;
+	position: absolute;
+	top: -44px;
+	right: -247px;
+	z-index: 4;
+	color: #4A4A4A;
+}
+
+.hotel-information .ster-lever:after {
+	position: absolute;
+	left: 117px;
+	bottom: -7.5px;
+	z-index: 3;
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	box-shadow: 3px 4px 8px rgba(0,0,0,.1);
+	transform: rotate(45deg);
+}
+
+.hotel-information p:nth-child(3),.hotel-information p:nth-child(5) {
+	margin: 14px 0 0;
+	font-weight: 700;
+}
+
+.hotel-information p:nth-child(3) i {
+	margin-left: 5px;
+}
+
+.hotel-information p:nth-child(3) i:hover {
+	color: #078171;
+}
+
+
+
+.hotel-facilities p:first-child,.room-features p:first-child,.hotel-information p:first-child {
+	margin-top: 13px;
+	font-size: 16px;
+	color: #2c2c2c;
+}
+
+.hotel-facilities p:last-child,.room-features p:last-child {
+	color: #078171;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+.hotel-information .score {
+	position: relative;
+} 
+
+.score p:first-child {
+	color: #c4c4c4;
+}
+
+.score p:nth-child(2) {
+	position: absolute;
+	top: 0px;
+	color: #636363;
+}
+
+.hotel-information p:nth-child(7) {
+	font-weight: 700;
+}
+
+.hotel-information .score p {
+	font-size: 11px;
+	margin-top: 0;
+}
+
+.hotel-information .score {
+	margin: 5px 0 20px;
+}
+
+.hotel-information .active,.hotel-information .active {
+	margin-top: 6px;
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+/*
+ * 
+ * 
+ * 
+ * 主体  位置
+ * 
+ * 
+ * 
+ * 
+ * */
+.location-place {
+	position: relative;
+	left: 132px;
+	margin-bottom: 30px;
+	width: 830px;
+	height: 654px;
+	background-color: white;
+	border: 1px solid #E5E5E5;
+}
+
+.location-place .title {
+	padding: 24px 24px 20px;
+	border: none;
+}
+
+.article .location-place::before {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	content: "";
+	width: 832px;
+	height: 5px;
+	background-color: #078171;
+}
+
+.location-place .map {
+	position: relative;
+	width: 830px;
+	height: 242px;
+	background-image: url(../images/精致客房/map-image.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.map .expand {
+	display: none;
+	position: absolute;
+	left: 364px;
+	top: 102px;
+	width: 101px;
+	height: 57px;
+	color: white;
+	font-size: 20px;
+	border-radius: 3px;
+	background-color: rgba(0,0,0,.5);
+	line-height: 57px;
+	text-align: center;
+}
+
+.map:hover {
+	opacity: .93;
+}
+
+.map:hover .expand {
+	display: block;
+}
+
+.location-place li {
+	clear: left;
+}
+
+.location-place .location-place-article {
+	padding: 0 12px;
+}
+
+
+.location-place .hotel ,.location-place .restaurant ,.location-place .scenic-spot {
+	position: relative;
+	padding: 0 12px;
+	width: 268px;
+	height: 330px;
+	float: left;
+	font-size: 14px;
+	color: #4A4A4A;
+	box-sizing: border-box;
+}
+
+.location-place a {
+	font-size: 14px;
+	color: #4A4A4A;
+}
+
+
+.location-place-article .title-head {
+	margin: 12px 0 4px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #000A12;
+}
+
+.location-place-article .footer-title {
+	position: absolute;
+	bottom: 15px;
+	font-weight: 700;
+	color: #078171;
+	cursor: pointer;
+}
+
+.location-place-article .footer-title:hover {
+	text-decoration: underline;
+}
+
+
+.position p {
+	margin-top: 5px;
+	display: inline-block;
+}
+
+.hotel .position p:first-child {
+	position: relative;
+	margin-left: 4px;
+	width: 10px;
+	color: #078171;
+	font-size: 18px;
+}
+
+.hotel .position i {
+	position: absolute;
+	top: -40px;
+}
+
+.hotel .position p:nth-child(2) {
+	margin-left: 5px;
+	margin-bottom: 5px;
+	width: 220px;
+	color: #078171;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.hotel .position p:nth-child(2):hover {
+	text-decoration: underline;
+}
+
+.hotel .plane {
+	margin-top: 10px;
+}
+
+
+.hotel .fa-plane {
+	margin: 0 8px 0 3px;
+	font-size: 18px;
+}
+
+.plane span {
+	margin-right: 20px;
+	font-size: 12px;
+	color: #767676;
+}
+
+.location-place-article .und:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+
+.restaurant span ,.scenic-spot span {
+	color: #4A4A4A;
+	font-size: 12px;
+}
+
+.restaurant .comment ,.scenic-spot .comment {
+	margin-left: 5px;
+}
+
+
+.restaurant .fa-male ,.scenic-spot .fa-male {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+
+.restaurant li ,.scenic-spot li {
+	margin-bottom: 10px;
+}
+
+.restaurant li p ,.scenic-spot li p {
+	line-height: 17px;
+}
+
+.restaurant .fa-dot-circle-o  ,.scenic-spot .fa-dot-circle-o ,
+.restaurant .fa-circle-o ,.scenic-spot .fa-circle-o  {
+	position: relative;
+	top: 2px;
+	color: #00a680;
+	font-size: 18px;
+}
+
+

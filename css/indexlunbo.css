@@ -1,0 +1,200 @@
+#banner{
+	width: 1519px;
+	height: 720px;
+	margin: 0 auto;
+	position: relative;
+}
+#banner .item{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.lr-tab .btn{
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background: url(../images/箭头3.png);
+	top: 321px;
+	transition: .5s;
+}
+.lr-tab .left{
+	left: 225px;
+	background-position-x: -55px;
+}
+.lr-tab .right{
+	right: 0;
+	background-position-x: 110px;
+}
+.lr-tab .left:hover{
+	background-position-x: 0px;
+}
+.lr-tab .right:hover{
+	background-position-x: 55px;
+}
+.tab-btn{
+	position: absolute;
+	width: 430px;
+	height: 7px;
+	right: 15px;
+	bottom: 20px;
+}
+.tab-btn .btn{
+	float: left;
+	width: 80px;
+	height: 7px;
+	background: white;
+	margin-left: 5px;
+}
+.tab-btn .btn:hover{
+	background: rgb(0,116,107);
+}
+.tab-btn .active{
+	background: rgb(0,116,107);
+}
+.nav-h{
+	position: absolute;
+	width: 100%;
+	height: 90px;
+	background: rgba(1,158,151,0.7);
+	
+}
+.nav-h .left,.nav-h .right{
+	position: absolute;
+	width: 141px;
+	height: 90px;
+	display: inline-block;
+	color: white;
+	font-size: 15px;
+	line-height: 90px;
+	cursor: pointer;
+}
+.nav-h .fa{
+	font-size: 18px;
+}
+.nav-h .left{
+	left: 270px;
+}
+.nav-h .right{
+	right: 40px;
+	
+}
+
+.nav-h .hover {
+	margin-right: 10px;
+	display: inline-block;
+}
+
+
+
+.nav-h .customer-service{
+	display: none;
+	position: absolute;
+	top: 67px;
+	right: 14px;
+	padding: 18px 35px;
+	width: 176px;
+	height: 39px;
+	background-color: white;
+	color: #4A4A4A;
+	line-height: 20px;
+	border-radius: 3px;
+	box-shadow: 3px 4px 8px rgba(0,0,0,.1), -2px -2px 5px rgba(0,0,0,.07);
+	z-index: 2;
+}
+
+.nav-h .customer-service::before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	right: 116px;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	transform: rotate(45deg);
+	z-index: 1;
+}
+
+.nav-h .phone:hover .customer-service{
+	display: inline-block;
+}
+
+
+.nav-h .img {
+	display: none;
+	position: absolute;
+	top: 67px;
+	left: -60px;
+	padding: 10px 20px;
+	background-color: #fff;
+	line-height: 16px;
+	border-radius: 3px;
+	box-shadow: 3px 4px 8px rgba(0,0,0,.1), -2px -2px 5px rgba(0,0,0,.07);
+}
+
+.nav-h .img::before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	right: 90px;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	transform: rotate(45deg);
+	z-index: 1;
+}
+
+.nav-h img {
+	width: 150px;
+}
+
+.nav-h .img p {
+	font-size: 14px;
+	color: rgb(1,158,151);
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 6px;
+}
+
+.nav-h .code:hover .img {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+.nav-s {
+	position: absolute;
+	width: 200px;
+	height: 720px;
+	background: rgba(1,158,151,0.7);
+	text-align: center;
+	left: 25px;
+}
+.nav-s img{
+	width: 200px;
+}
+.nav-s a{
+	color: white;
+}
+.nav-s a{
+	display: block;
+	width: 200px;
+	height: 62px;
+	line-height: 62px;
+	font-size: 16px;
+	transition: 0.7s;
+}
+.nav-s a:hover{
+	background: white;
+	color: rgb(1,158,151);
+}
+
+
+
