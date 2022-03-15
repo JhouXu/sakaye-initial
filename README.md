@@ -20,11 +20,11 @@
 
 ### 精致客房
 
-![精致客房效果图](https://jhouxu.github.io/sakaye-initial/images/case1.jpg)
+![精致客房效果图](https://jhouxu.github.io/sakaye-initial/images/case2.jpg)
 
 ### 美食特色
 
-![美食特色效果图](https://jhouxu.github.io/sakaye-initial/images/case1.jpg)
+![美食特色效果图](https://jhouxu.github.io/sakaye-initial/images/case3.jpg)
 
 ### 房间泳池
 
